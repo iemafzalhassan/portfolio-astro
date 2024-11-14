@@ -1,4 +1,4 @@
-# 🌌 iemafzalhassan DevOps Portfolio.
+# Portfolio.
 
 Welcome to my DevOps Portfolio! This project is built using Astro and Tailwind CSS and is designed to showcase my DevOps projects, skills, and experience in a professional, sleek, and fully customizable format.
 
