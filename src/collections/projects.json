@@ -1,9 +1,33 @@
 [
 	{
+		"name": "DNS-Query",
+		"description": "Global DNS Check: Tracking Domain Resolution Across Regions",
+		"image": "/assets/images/projects/dns-server.png",
+		"url": "https://github.com/iemafzalhassan/DNS_Server"
+	},
+	{
+		"name": "2048 Game",
+		"description": "Containerized 2048 Game: Play the Classic Puzzle Anywhere, Anytime!",
+		"image": "/assets/images/projects/2048-Game.png",
+		"url": "https://github.com/iemafzalhassan/Docker-for-DevOps/tree/main/2048-game"
+	},
+	{
+		"name": "Banking System",
+		"description": "Multi-Tier Banking App: Scalable Finance Solution Built with Java and Spring Boot",
+		"image": "/assets/images/projects/bankapp.png",
+		"url": "https://github.com/iemafzalhassan/Docker-for-DevOps/tree/main/spring_boot_bankapp"
+		},
+	{
 		"name": "Email.ML",
 		"description": "Minimalist temporary Email.",
 		"image": "/assets/images/projects/email.ml.png",
 		"url": "https://email.ml"
+	},
+	{
+		"name": "Wanderlust",
+		"description": "WanderLust: An Open-Source Travel Blog to Boost React and Git Skills",
+		"image": "/assets/images/projects/wanderlust.png",
+		"url": "https://github.com/iemafzalhassan/Docker-for-DevOps/tree/main/wanderlust"
 	},
 	{
 		"name": "DNS.Surf",
