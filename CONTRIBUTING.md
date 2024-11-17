@@ -10,7 +10,6 @@ Thank you for your interest in contributing! Don’t worry if you’re new—thi
 2. Improve your skills in **web development**, **DevOps**, and **collaboration**.  
 3. Help make this portfolio better for everyone.  
 
----
 
 ## 🚀 Step-by-Step Guide to Contribute  
 
@@ -19,7 +18,6 @@ Thank you for your interest in contributing! Don’t worry if you’re new—thi
 - Go to the repository: [DevOps Portfolio](https://github.com/iemafzalhassan/portfolio).  
 - Click the **Fork** button in the top-right corner. This will create your copy of the project.  
 
----
 
 ### 2. Clone Your Fork  
 
@@ -27,10 +25,12 @@ Clone repo copy to your computer.
 Open a terminal and type:  
 ```bash
 git clone https://github.com/<your-username>/portfolio.git
+```
+
+```bash
 cd portfolio
 ```
 
----
 
 ### 3. Create a New Branch  
 
@@ -39,7 +39,6 @@ Create a separate branch to work on your changes.
 git checkout -b feature/your-feature-name
 ```
 
----
 
 ### 4. Make Changes  
 
@@ -51,7 +50,6 @@ Examples of changes:
 - Enhance K8s Manifests.
 - Enhance Jenkinsfile.
 
----
 
 ### 5. Test Your Changes  
 
@@ -68,10 +66,12 @@ Check that everything works correctly before moving to the next step.
 Save your work and add a meaningful message:  
 ```bash
 git add .
+```
+
+```bash
 git commit -m "Add: Your feature name or bug fix description"
 ```
 
----
 
 ### 7. Push to GitHub  
 
@@ -80,15 +80,13 @@ Upload your changes to your fork:
 git push origin feature/your-feature-name
 ```
 
----
 
 ### 8. Open a Pull Request  
 
-1. Go to the original repository: [DevOps Portfolio](https://github.com/iemafzalhassan/iemafzalhassan-portfolio).  
+1. Go to the original repository: [DevOps Portfolio](https://github.com/iemafzalhassan/portfolio).  
 2. Click **Pull Requests** > **New Pull Request**.  
 3. Select your branch and submit the pull request with a short description of your changes.  
 
----
 
 ## 🛡 Important Notes
 
@@ -103,4 +101,3 @@ git push origin feature/your-feature-name
 If you have any questions, feel free to open an issue in the repository.  
 
 Let’s make this project amazing—together! 🚀
-```
