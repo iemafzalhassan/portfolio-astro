@@ -2,7 +2,6 @@
 
 Welcome to the **DevOps Portfolio** project! This Code of Conduct outlines our expectations for everyone participating in this project. We want to create a safe, inclusive, and welcoming environment for all contributors, regardless of their background or experience level.
 
----
 
 ## 🤝 Our Pledge
 
@@ -12,7 +11,6 @@ We are committed to:
 - Listening to each other’s ideas and feedback.
 - Helping newcomers and making this a safe space to learn and grow.
 
----
 
 ## 🌟 Our Standards
 
@@ -31,7 +29,6 @@ We will not tolerate:
 - **Trolling or disruptive behavior**: Deliberate attempts to create conflict or derail conversations.
 - **Spamming**: Irrelevant or repetitive posts that don’t add value to the project.
 
----
 
 ## 🚀 Our Responsibilities
 
@@ -40,16 +37,14 @@ Maintainers of this project are responsible for:
 - Reviewing issues and pull requests with fairness and respect.
 - Responding to reports of unacceptable behavior promptly and taking appropriate action.
 
----
 
 ## 📢 Reporting Issues
 
 If you experience or witness unacceptable behavior, **please report it** to the maintainers via email or by opening an issue marked as `private`.  
-- **Email**: [your-email@example.com] (replace with your actual contact email).
+- **Email**: [Here](iemafzalhassan@gmail.com).
 
 All reports will be handled confidentially.
 
----
 
 ## ⚖️ Consequences of Violations
 
@@ -58,12 +53,10 @@ Maintainers may take any of the following actions in response to unacceptable be
 2. **Temporary ban**: Restricted access for a specific time period.
 3. **Permanent ban**: Removal from the project and future participation.
 
----
 
 ## 💬 Need Help?
 
 If you’re unsure about anything, feel free to ask! We are here to help and want everyone to feel welcome. 😊
 
----
 
 This Code of Conduct is inspired by the [Contributor Covenant](https://www.contributor-covenant.org/). Let’s build a respectful and awesome community together! 🚀
