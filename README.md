@@ -1,4 +1,4 @@
-# Portfolio.
+# Portfolio
 
 Welcome to my DevOps Portfolio! This project is built using Astro and Tailwind CSS and is designed to showcase my DevOps projects, skills, and experience in a professional, sleek, and fully customizable format.
 
@@ -28,12 +28,9 @@ If you want to:
 - Enhance Dockerfile
 - Enhance Jenkinsfile
 - Enhance K8s Manifests
-- Add features
-- Fix bugs
 - Make the project better  
 Check out our **[CONTRIBUTING.md](CONTRIBUTING.md)** guide. Don’t worry—it’s written in a way that even if you are a beginner, you can follow!
 
----
 
 ## 🛠 How to Set Up the Project
 
@@ -68,13 +65,39 @@ Here’s how you can set up the portfolio on your **local machine**, **AWS EC2**
 ```
    Open your browser and go to [http://localhost:6543](http://localhost:6543). 🎉 website is live!
 
+Here’s how you can add Docker deployment commands to the "How to Set Up the Project" section:
+
+---
+
+### 🐳 Deploying with Docker
+
+If you prefer to use Docker, here’s how to containerize and run the project:
+
+1. **Build the Docker Image**:
+   First, navigate to the project folder and build the Docker image:
+```bash
+   docker build -t portfolio .
+  ```
+
+2. **Run the Docker Container**:
+   After building the image, run it in detached mode and expose it on port `6543`:
+```bash
+   docker run -d -p 6543:6543 portfolio:latest
+```
+
+3. **Access the App**:
+   Once the container is running, open your browser and visit:
+   [http://localhost:6543](http://localhost:6543) to view your portfolio.
+
+---
+
 ### ☁️ Deploying on AWS EC2
 
 Follow these steps to host your portfolio on an **AWS EC2 instance**:
 
 1. **Launch an EC2 Instance**:
    - Log in to [AWS Console](https://aws.amazon.com/console/).
-   - Start a new EC2 instance (select **Ubuntu** or **Amazon Linux** as the OS).
+   - Start a new EC2 instance (select **Ubuntu** or **RHEL** as the OS).
 
 2. **Connect to EC2**:
    - Use **SSH** or a terminal to connect:
@@ -105,7 +128,7 @@ Follow these steps to host your portfolio on an **AWS EC2 instance**:
 ```bash
    npm start
 ```
-   Open a browser, and enter your EC2’s public IP address. Your site is live on the internet!
+   Open a browser, and enter your EC2’s public IP address. Webpage is live on the internet!
 
 ---
 
@@ -143,7 +166,6 @@ If you’re familiar with Kubernetes, you can deploy this project too. Here’s 
 
 Check out our **[CONTRIBUTING.md](CONTRIBUTING.md)** for simple, step-by-step instructions on how to contribute.
 
----
 
 ## 📄 License
 
