@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: portfolio-service
+  namespace: portfolio
+spec:
+  selector:
+    app: portfolio
+    ports:
+      -protocol: TCP
+      targetPort: 6543
+      port: 6543
+
