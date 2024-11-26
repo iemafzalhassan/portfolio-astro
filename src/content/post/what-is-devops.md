@@ -1,3 +1,15 @@
+---
+layout: ../../layouts/post.astro
+title: What is DevOps? 
+description: A Beginner's Guide to the World of Modern Software Development
+dateFormatted: Nov 27th, 2024
+Author: Md. Afzal Hassan Ehsani
+---
+
+*Author: Md. Afzal Hassan Ehsani*
+
+# What is DevOps? A Beginner's Guide to the World of Modern Software Development
+
 In today’s fast-paced digital world, software development is at the heart of almost everything—whether it’s the app on your phone, the website you shop on, or even the game you play. But have you ever wondered how these applications and websites are built and updated so quickly? How do companies release new features so often? Well, the secret behind this speed and efficiency is a practice called **DevOps**.
 
 Don’t worry if you’ve never heard of DevOps before. In this blog, we’re going to break it down in a simple and easy-to-understand way. Whether you’re a high school student curious about tech or a complete beginner in the DevOps community, this blog will give you a comprehensive understanding of what DevOps is, why it’s important, and how it works. So, let’s dive in!
