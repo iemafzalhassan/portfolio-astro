@@ -1,9 +1,15 @@
 [
 	{
-		"name": "DNS-Query",
-		"description": "Global DNS Check: Tracking Domain Resolution Across Regions",
-		"image": "/assets/images/projects/dns-server.png",
-		"url": "https://github.com/iemafzalhassan/DNS_Server"
+		"name": "portfolio",
+		"description": "A Personal Portfolio",
+		"image": "/assets/images/projects/portfolio.png",
+		"url": "https://github.com/iemafzalhassan/portfolio.png"
+	},
+	{
+		"name": "full-stack_chatApp",
+		"description": "Welcome to the Full Stack Realtime Three Tier Chat App project, where we're building a scalable and secure real-time chat experience using the latest technologies",
+		"image": "/assets/images/projects/chatapp.png",
+		"url": "https://github.com/iemafzalhassan/full-stack_chatApp"
 	},
 	{
 		"name": "2048 Game",

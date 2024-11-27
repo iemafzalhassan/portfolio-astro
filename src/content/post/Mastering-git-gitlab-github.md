@@ -6,7 +6,8 @@ dateFormatted: Oct 25th, 2024
 Author: Md. Afzal Hassan Ehsani
 ---
 
-*Author: Md. Afzal Hassan Ehsani*
+*Author: [Md. Afzal Hassan Ehsani](https://www.linkedin.com/in/iemafzalhassan/)*
+
 
 In today’s fast-paced software development landscape, **version control** is essential for collaboration and project management. **Git** is the most widely adopted version control system, and platforms like **GitHub** and **GitLab** amplify its capabilities, making it easier for teams to collaborate effectively. This comprehensive guide will walk you through everything you need to know about Git, including its stages, branching, and real-world applications in both **development** and **DevOps**.
 

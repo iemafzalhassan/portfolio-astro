@@ -6,7 +6,8 @@ dateFormatted: Nov 6th, 2024
 Author: Md. Afzal Hassan Ehsani
 ---
 
-*Author: Md. Afzal Hassan Ehsani*
+*Author: [Md. Afzal Hassan Ehsani](https://www.linkedin.com/in/iemafzalhassan/)*
+
 
 Linux is an operating system that has revolutionized the computing world. It's the backbone of modern infrastructure, especially in the world of DevOps, where automation, scalability, and reliability are paramount. This blog will take you through the origins of Linux, its structure, the role it plays in DevOps, and provide a detailed exploration of the commands that are essential for any DevOps engineer.
 

@@ -6,7 +6,8 @@ dateFormatted: Nov 7th, 2024
 Author: Md. Afzal Hassan Ehsani
 ---
 
-*Author: Md. Afzal Hassan Ehsani*
+*Author: [Md. Afzal Hassan Ehsani](https://www.linkedin.com/in/iemafzalhassan/)*
+
 
 In today’s fast-paced DevOps world, **Docker** has revolutionized how we develop, test, and deploy applications. It provides a standardized way to run software, ensuring that applications behave the same in development as they do in production. If you're new to Docker or looking to deepen your knowledge, this guide will take you from the basics to advanced Docker concepts.
 

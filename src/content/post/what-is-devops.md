@@ -6,9 +6,8 @@ dateFormatted: Nov 27th, 2024
 Author: Md. Afzal Hassan Ehsani
 ---
 
-*Author: Md. Afzal Hassan Ehsani*
+*Author: [Md. Afzal Hassan Ehsani](https://www.linkedin.com/in/iemafzalhassan/)*
 
-# What is DevOps? A Beginner's Guide to the World of Modern Software Development
 
 In today’s fast-paced digital world, software development is at the heart of almost everything—whether it’s the app on your phone, the website you shop on, or even the game you play. But have you ever wondered how these applications and websites are built and updated so quickly? How do companies release new features so often? Well, the secret behind this speed and efficiency is a practice called **DevOps**.
 
