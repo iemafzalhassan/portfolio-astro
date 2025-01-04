@@ -1,5 +1,9 @@
 node_modules
 *.log
 *.md
-*.git
+.git
+.env
+.env.*
+dist
+.cache
 

@@ -3,6 +3,98 @@ import menus from "../collections/menu.json";
 import Logo from "../components/logo.astro";
 ---
 
+<style>
+  .marker-effect {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 4px;
+  }
+
+  /* Base styles for the underline */
+  .marker-effect::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 20%;
+    width: 60%;
+    height: 4px;
+    background: currentColor;
+    opacity: 0;
+    border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Animation Option 1: Slide and Expand */
+  .marker-effect.slide-expand::after {
+    transform: scaleX(0) translateX(-100%);
+    transform-origin: left;
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.3s;
+  }
+
+  .marker-effect.slide-expand:hover::after {
+    transform: scaleX(1) translateX(0);
+    opacity: 0.7;
+  }
+
+  /* Animation Option 2: Grow from Center */
+  .marker-effect.grow-center::after {
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s;
+  }
+
+  .marker-effect.grow-center:hover::after {
+    transform: scaleX(1);
+    opacity: 0.7;
+  }
+
+  /* Animation Option 3: Draw with Rotation */
+  .marker-effect.draw-rotate::after {
+    transform: scaleX(0) rotate(-2deg);
+    transform-origin: left;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s;
+  }
+
+  .marker-effect.draw-rotate:hover::after {
+    transform: scaleX(1) rotate(0deg);
+    opacity: 0.7;
+  }
+
+  /* Animation Option 4: Elastic Bounce */
+  .marker-effect.elastic::after {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.3s;
+  }
+
+  .marker-effect.elastic:hover::after {
+    transform: scaleX(1);
+    opacity: 0.7;
+  }
+
+  /* Animation Option 5: Wave */
+  .marker-effect.wave::after {
+    transform: scaleX(0) translateY(0);
+    transform-origin: left;
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.3s;
+  }
+
+  .marker-effect.wave:hover::after {
+    transform: scaleX(1) translateY(2px);
+    opacity: 0.7;
+    animation: wave 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+  }
+
+  @keyframes wave {
+    0%, 100% { transform: scaleX(1) translateY(0); }
+    50% { transform: scaleX(1) translateY(3px); }
+  }
+
+  .marker-effect:hover {
+    color: inherit;
+  }
+</style>
+
 <!-- This is an invisible div with relative position so that it takes up the height of the menu (because menu is absolute/fixed) -->
 <div class="relative w-full h-20 opacity-0 pointer-events-none"></div>
 <header id="header" class="absolute top-0 z-50 w-full h-20">
@@ -64,7 +156,7 @@ import Logo from "../components/logo.astro";
             return (
               <a
                 href={menu.url}
-                class="relative flex items-center justify-center w-full px-3 py-2 font-medium tracking-wide text-center duration-200 ease-out sm:py-0 sm:mb-0 md:w-auto hover:text-neutral-900 dark:hover:text-white"
+                class="marker-effect elastic relative flex items-center justify-center w-full px-3 py-2 font-medium tracking-wide text-center duration-200 ease-out sm:py-0 sm:mb-0 md:w-auto hover:text-neutral-900 dark:hover:text-white"
               >
                 {menu.name}
               </a>
@@ -106,10 +198,6 @@ import Logo from "../components/logo.astro";
             ></path></svg
           >
         </div>
-        <span class="hidden sm:inline-block">
-          <span id="dayText" class="ml-2">Day mode</span>
-          <span id="nightText" class="hidden ml-2">Night mode</span>
-        </span>
       </div>
     </nav>
   </div>

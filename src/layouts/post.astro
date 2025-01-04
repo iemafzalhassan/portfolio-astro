@@ -3,32 +3,36 @@ import Layout from "./main.astro";
 const { frontmatter } = Astro.props;
 ---
 
-<Layout title={frontmatter.title}>
-  <main
-    class="relative z-30 max-w-4xl pb-1 mx-auto mt-10 bg-white dark:bg-neutral-950 md:rounded-t-md text-neutral-900"
-  >
-    <div
-      class="relative flex flex-col px-5 pt-6 border-t border-b-0 md:border-r md:border-l md:pt-20 lg:px-0 justify-stretch md:rounded-t-2xl border-neutral-200 dark:border-neutral-800"
-    >
-      <div
-        class="absolute top-0 left-0 hidden w-px h-full mt-1 -translate-x-px md:block bg-gradient-to-b from-transparent to-white dark:to-neutral-950"
-      >
+<Layout>
+  <div class="min-h-screen">
+    <article class="mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+      <header class="pt-16 lg:pt-24">
+        <div class="space-y-4 text-center">
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tighter">
+            {frontmatter.title}
+          </h1>
+          <div class="text-neutral-400">
+            <time datetime={frontmatter.date}>{frontmatter.dateFormatted}</time>
+          </div>
+        </div>
+      </header>
+      <div class="mt-8 lg:mt-12 prose prose-invert prose-neutral mx-auto lg:prose-lg max-w-none lg:max-w-[75ch] prose-a:text-blue-400 hover:prose-a:text-blue-300 prose-img:rounded-xl">
+        <slot />
       </div>
-      <div
-        class="absolute top-0 right-0 hidden w-px h-full mt-1 translate-x-px md:block bg-gradient-to-b from-transparent to-white dark:to-neutral-950"
-      >
-      </div>
-      <h1
-        class="w-full max-w-2xl mx-auto text-3xl font-bold leading-tight tracking-tighter text-left md:mb-12 md:text-4xl dark:text-neutral-100 lg:text-5xl md:leading-none"
-      >
-        {frontmatter.title}
-      </h1>
-    </div>
-
-    <article
-      class="w-full max-w-2xl mx-auto mb-20 prose-sm prose px-7 lg:px-0 lg:prose-lg dark:prose-invert"
-    >
-      <slot />
     </article>
-  </main>
+  </div>
 </Layout>
+
+<style>
+  /* Additional styles for code blocks and other elements */
+  :global(pre) {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: rgb(17, 17, 17) !important;
+  }
+  
+  :global(.prose img) {
+    margin: 2rem auto;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+</style>

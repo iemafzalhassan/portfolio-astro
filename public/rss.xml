@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Md. Afzal Hassan Ehsani's Blog</title>
+    <description>DevOps Engineering, Cloud Computing, and Software Development insights</description>
+    <link>https://iemafzalhassan.tech</link>
+    <atom:link href="https://iemafzalhassan.tech/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Jan 2025 04:13:35 GMT</lastBuildDate>
+    
+    <item>
+      <title>What Is CloudHealth?</title>
+      <link>https://iemafzalhassan.tech/posts/cloud-heath-benefits</link>
+      <description><![CDATA[Cloud Health benifits and use cases.]]></description>
+      <pubDate>Sat, 04 Jan 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://iemafzalhassan.tech/posts/cloud-heath-benefits</guid>
+      <category>Cloud Computing</category>
+      <category>AWS</category>
+      <category>Kubernetes</category>
+      <category>Tutorials</category>
+      <category>DevOps</category>
+    </item>
+    
+    <item>
+      <title>Exploring Warp Terminal: A Next-Gen Tool for DevOps Engineers</title>
+      <link>https://iemafzalhassan.tech/posts/warp-newgen=terminal</link>
+      <description><![CDATA[Warp terminal is the NewGen terminal for developers.]]></description>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://iemafzalhassan.tech/posts/warp-newgen=terminal</guid>
+      <category>DevOps</category>
+      <category>Cloud Computing</category>
+      <category>AWS</category>
+      <category>Kubernetes</category>
+      <category>Docker</category>
+      <category>CI/CD</category>
+      <category>Tutorials</category>
+    </item>
+    
+    <item>
+      <title>Integrating Snyk with Docker</title>
+      <link>https://iemafzalhassan.tech/posts/synk-and-docker</link>
+      <description><![CDATA[everything you need to know about synk.]]></description>
+      <pubDate>Thu, 02 Jan 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://iemafzalhassan.tech/posts/synk-and-docker</guid>
+      <category>DevOps</category>
+      <category>Cloud Computing</category>
+      <category>AWS</category>
+      <category>Docker</category>
+      <category>CI/CD</category>
+      <category>Tutorials</category>
+    </item>
+    
+    <item>
+      <title>Mastering Docker for DevOps: From Zero to Advanced</title>
+      <link>https://iemafzalhassan.tech/posts/docker-tutorial</link>
+      <description><![CDATA[Everything you need to know about docker]]></description>
+      <pubDate>Thu, 02 Jan 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://iemafzalhassan.tech/posts/docker-tutorial</guid>
+      <category>Docker</category>
+      <category>DevOps</category>
+      <category>Tutorials</category>
+      <category>Kubernetes</category>
+      <category>Cloud Computing</category>
+    </item>
+    
+    <item>
+      <title>Containerize and Orchestrate: Building a Real-Time(Three-tier) Chat App with Docker and Kubernetes</title>
+      <link>https://iemafzalhassan.tech/posts/full-stack-chatapp-project</link>
+      <description><![CDATA[Three tier chatapp project]]></description>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://iemafzalhassan.tech/posts/full-stack-chatapp-project</guid>
+      <category>infrastructure</category>
+      <category>Tutorials</category>
+      <category>CI/CD</category>
+      <category>Docker</category>
+      <category>Kubernetes</category>
+      <category>AWS</category>
+      <category>Cloud Computing</category>
+      <category>DevOps</category>
+    </item>
+    
+    <item>
+      <title>Linux Operating System: The Foundation of DevOps Engineering</title>
+      <link>https://iemafzalhassan.tech/posts/linux-operating-system</link>
+      <description><![CDATA[The Birth of Linux: A Journey Through Time]]></description>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://iemafzalhassan.tech/posts/linux-operating-system</guid>
+      <category>DevOps</category>
+      <category>Docker</category>
+      <category>Tutorials</category>
+      <category>Kubernetes</category>
+    </item>
+    
+    <item>
+      <title>How to Download and Host OpenWebUI Locally with Llama 3.2 AI on Your Computer Using Docker</title>
+      <link>https://iemafzalhassan.tech/posts/personal-chat-gpt</link>
+      <description><![CDATA[You can use chatgpt like personal chatgpt in you local environment.]]></description>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://iemafzalhassan.tech/posts/personal-chat-gpt</guid>
+      <category>DevOps</category>
+      <category>Docker</category>
+      <category>CI/CD</category>
+      <category>Tutorials</category>
+      <category>infrastructure</category>
+      <category>Cloud Computing</category>
+      <category>AWS</category>
+    </item>
+    
+    <item>
+      <title>Mastering Git, GitHub, and GitLab: The Ultimate Beginner's Guide to Version Control</title>
+      <link>https://iemafzalhassan.tech/posts/git&github-indepth-guide</link>
+      <description><![CDATA[Indepth guide to Git and Github]]></description>
+      <pubDate>Thu, 19 Dec 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://iemafzalhassan.tech/posts/git&github-indepth-guide</guid>
+      <category>DevOps</category>
+      <category>Cloud Computing</category>
+      <category>AWS</category>
+      <category>Kubernetes</category>
+      <category>Docker</category>
+      <category>CI/CD</category>
+      <category>Tutorials</category>
+      <category>infrastructure</category>
+    </item>
+    
+    <item>
+      <title>AI tools for DevOps workflows</title>
+      <link>https://iemafzalhassan.tech/posts/ai-tools-for-industry</link>
+      <description><![CDATA[AI industry level tools to study about.]]></description>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://iemafzalhassan.tech/posts/ai-tools-for-industry</guid>
+      <category>DevOps</category>
+      <category>Cloud Computing</category>
+      <category>AWS</category>
+      <category>Docker</category>
+      <category>CI/CD</category>
+      <category>Tutorials</category>
+      <category>infrastructure</category>
+    </item>
+    
+    <item>
+      <title>A Beginner's Guide to Use Pieces: Your Ultimate Coding Companion</title>
+      <link>https://iemafzalhassan.tech/posts/pieces-for-developer-beginner-guide</link>
+      <description><![CDATA[A beginner guide for pieces]]></description>
+      <pubDate>Tue, 26 Nov 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://iemafzalhassan.tech/posts/pieces-for-developer-beginner-guide</guid>
+      <category>DevOps</category>
+      <category>Cloud Computing</category>
+      <category>AWS</category>
+      <category>Kubernetes</category>
+      <category>Docker</category>
+      <category>CI/CD</category>
+      <category>Tutorials</category>
+      <category>infrastructure</category>
+    </item>
+    
+    <item>
+      <title>What is DevOps? A Beginner's Guide to the World of Modern Software Development</title>
+      <link>https://iemafzalhassan.tech/posts/what-is-devops</link>
+      <description><![CDATA[A Beginner's Guide to the World of Modern Software Development]]></description>
+      <pubDate>Fri, 01 Nov 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://iemafzalhassan.tech/posts/what-is-devops</guid>
+      <category>DevOps</category>
+      <category>Tutorials</category>
+      <category>CI/CD</category>
+      <category>Docker</category>
+      <category>Kubernetes</category>
+      <category>AWS</category>
+      <category>Cloud Computing</category>
+      <category>infrastructure</category>
+    </item>
+    
+    <item>
+      <title>Supercharging DevOps Productivity with Pieces for Developers</title>
+      <link>https://iemafzalhassan.tech/posts/everything-you-need-to-pieces-for-developer-</link>
+      <description><![CDATA[A brief guide which includes Everything you need to know about pieces.]]></description>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://iemafzalhassan.tech/posts/everything-you-need-to-pieces-for-developer-</guid>
+      <category>DevOps</category>
+      <category>AWS</category>
+      <category>Kubernetes</category>
+      <category>Docker</category>
+      <category>CI/CD</category>
+      <category>Tutorials</category>
+    </item>
+    
+    <item>
+      <title>Essential Linux Commands: A Beginner's Guide</title>
+      <link>https://iemafzalhassan.tech/posts/linux-beginner-friendly-cheatsheet</link>
+      <description><![CDATA[Day to day go Linux commands]]></description>
+      <pubDate>Tue, 22 Oct 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://iemafzalhassan.tech/posts/linux-beginner-friendly-cheatsheet</guid>
+      <category>Tutorials</category>
+      <category>DevOps</category>
+      <category>Kubernetes</category>
+      <category>Docker</category>
+      <category>CI/CD</category>
+    </item>
+  </channel>
+</rss>

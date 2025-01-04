@@ -4,40 +4,105 @@ import SquareLine from "./square-line.astro";
 
 <div class="absolute w-full h-auto" style="z-index:-1">
   <div
-    class="absolute top-0 left-0 w-1/2 h-auto bg-neutral-100 dark:bg-neutral-800"
+    class="absolute top-0 left-0 w-1/2 h-auto bg-neutral-100 dark:bg-neutral-900"
   >
     <div
       class="absolute inset-0 z-30 w-full h-full pointer-events-none bg-gradient-to-tl from-white dark:from-neutral-950 from-50% via-90% to-100% via-transparent to-transparent"
     >
     </div>
     <div
-      class="flex flex-col w-full h-full border-t border-l divide-y divide-dashed divide-neutral-300 dark:divide-neutral-700 border-neutral-300 dark:border-neutral-900"
+      class="flex flex-col w-full h-full border-t border-l divide-y divide-dashed divide-neutral-300 dark:divide-neutral-700 border-neutral-300 dark:border-neutral-700 matrix-scan"
     >
-      <SquareLine />
-      <SquareLine />
-      <SquareLine />
-      <SquareLine />
-      <SquareLine />
-      <SquareLine />
+      <SquareLine class="glow-effect" />
+      <SquareLine class="glow-effect" />
+      <SquareLine class="glow-effect" />
+      <SquareLine class="glow-effect" />
+      <SquareLine class="glow-effect" />
+      <SquareLine class="glow-effect" />
     </div>
   </div>
 
   <div
-    class="absolute top-0 right-0 w-1/2 h-auto bg-neutral-100 dark:bg-neutral-800"
+    class="absolute top-0 right-0 w-1/2 h-auto bg-neutral-100 dark:bg-neutral-900"
   >
     <div
       class="absolute inset-0 z-30 w-full h-full pointer-events-none bg-gradient-to-tr from-white dark:from-neutral-950 from-50% via-90% to-100% via-transparent to-transparent"
     >
     </div>
     <div
-      class="flex flex-col w-full h-full border-t border-l divide-y divide-dashed divide-neutral-300 dark:divide-neutral-700 border-neutral-300 dark:border-neutral-900"
+      class="flex flex-col w-full h-full border-t border-l divide-y divide-dashed divide-neutral-300 dark:divide-neutral-700 border-neutral-300 dark:border-neutral-700 matrix-scan-reverse"
     >
-      <SquareLine />
-      <SquareLine />
-      <SquareLine />
-      <SquareLine />
-      <SquareLine />
-      <SquareLine />
+      <SquareLine class="glow-effect" />
+      <SquareLine class="glow-effect" />
+      <SquareLine class="glow-effect" />
+      <SquareLine class="glow-effect" />
+      <SquareLine class="glow-effect" />
+      <SquareLine class="glow-effect" />
     </div>
   </div>
 </div>
+
+<style>
+  @keyframes matrixScan {
+    0% {
+      transform: translateY(-5%);
+      box-shadow: 0 0 10px rgba(0, 255, 0, 0.1);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+    }
+    100% {
+      transform: translateY(105%);
+      box-shadow: 0 0 10px rgba(0, 255, 0, 0.1);
+    }
+  }
+
+  .matrix-scan::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #00ff00, transparent);
+    animation: matrixScan 8s linear infinite;
+    opacity: 0.5;
+  }
+
+  .matrix-scan-reverse::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(to left, transparent, #00ff00, transparent);
+    animation: matrixScan 8s linear infinite reverse;
+    opacity: 0.5;
+  }
+
+  .glow-effect {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .glow-effect:hover {
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+    z-index: 1;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .glow-effect {
+      animation: glow 4s ease-in-out infinite alternate;
+    }
+  }
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px rgba(0, 255, 0, 0.1);
+    }
+    100% {
+      box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+    }
+  }
+</style>

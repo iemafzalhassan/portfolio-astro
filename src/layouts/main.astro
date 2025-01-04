@@ -12,21 +12,43 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
 
-    <!-- Used to add dark mode right away, adding here prevents any flicker -->
+    <!-- Prevent flash of wrong theme -->
     <script is:inline>
-      if (typeof Storage !== 'undefined') {
-        if (
-          localStorage.getItem('dark_mode') &&
-          localStorage.getItem('dark_mode') == 'true'
-        ) {
-          document.documentElement.classList.add('dark')
-        }
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const darkModeStorage = localStorage.getItem("dark_mode");
+      
+      if (darkModeStorage === "true" || (darkModeStorage === null && prefersDark)) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
       }
     </script>
 
     <style>
       .prose img {
         border-radius: 20px;
+      }
+      
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Light mode styles */
+      body {
+        background-color: white;
+        color: rgb(64, 64, 64);
+      }
+
+      /* Dark mode styles */
+      .dark body {
+        background-color: rgb(10, 10, 10);
+        color: rgb(229, 229, 229);
+      }
+
+      main {
+        flex: 1;
       }
     </style>
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png" />
@@ -36,7 +58,9 @@ const { title } = Astro.props;
   <body class="antialiased bg-white dark:bg-neutral-950">
     <SquareLines />
     <Header />
-    <slot />
+    <main>
+      <slot />
+    </main>
     <Footer />
     <script src="../assets/js/main.js"></script>
     <Fragment set:html={import.meta.env.FOOTER_INJECT} />

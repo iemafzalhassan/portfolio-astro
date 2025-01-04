@@ -17,31 +17,38 @@ let headerElement = null;
 document.addEventListener("DOMContentLoaded", () => {
 	headerElement = document.getElementById("header");
 
-	if (
-		localStorage.getItem("dark_mode") &&
-		localStorage.getItem("dark_mode") === "true"
-	) {
+	// Check system preference for dark mode
+	const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+	const darkModeStorage = localStorage.getItem("dark_mode");
+	
+	if (darkModeStorage === "true" || (darkModeStorage === null && prefersDark)) {
 		window.darkMode = true;
 		showNight();
 	} else {
+		window.darkMode = false;
 		showDay();
 	}
+	
 	stickyHeaderFuncionality();
 	applyMenuItemClasses();
 	evaluateHeaderPosition();
 	mobileMenuFunctionality();
-});
 
-// window.toggleDarkMode = function(){
-//     document.documentElement.classList.toggle('dark');
-//     if(document.documentElement.classList.contains('dark')){
-//         localStorage.setItem('dark_mode', true);
-//         window.darkMode = true;
-//     } else {
-//         window.darkMode = false;
-//         localStorage.setItem('dark_mode', false);
-//     }
-// }
+	// Add click event listener for dark mode toggle
+	document.getElementById("darkToggle").addEventListener("click", () => {
+		document.documentElement.classList.add("duration-300");
+		
+		if (document.documentElement.classList.contains("dark")) {
+			document.documentElement.classList.remove("dark");
+			localStorage.setItem("dark_mode", "false");
+			showDay(true);
+		} else {
+			document.documentElement.classList.add("dark");
+			localStorage.setItem("dark_mode", "true");
+			showNight(true);
+		}
+	});
+});
 
 window.stickyHeaderFuncionality = () => {
 	window.addEventListener("scroll", () => {
@@ -69,68 +76,56 @@ window.evaluateHeaderPosition = () => {
 	}
 };
 
-document.getElementById("darkToggle").addEventListener("click", () => {
-	document.documentElement.classList.add("duration-300");
-
-	if (document.documentElement.classList.contains("dark")) {
-		localStorage.removeItem("dark_mode");
-		showDay(true);
-	} else {
-		localStorage.setItem("dark_mode", true);
-		showNight(true);
-	}
-});
-
 function showDay(animate) {
-	document.getElementById("sun").classList.remove("setting");
-	document.getElementById("moon").classList.remove("rising");
-
-	let timeout = 0;
+	// Clear any existing animations first
+	document.getElementById("sun").classList.remove("setting", "rising");
+	document.getElementById("moon").classList.remove("setting", "rising");
 
 	if (animate) {
-		timeout = 500;
-
+		// Start moon setting animation
 		document.getElementById("moon").classList.add("setting");
-	}
-
-	setTimeout(() => {
-		document.getElementById("dayText").classList.remove("hidden");
-		document.getElementById("nightText").classList.add("hidden");
-
+		
+		// Wait for moon to set before showing sun
+		setTimeout(() => {
+			document.getElementById("moon").classList.add("hidden");
+			document.getElementById("sun").classList.remove("hidden");
+			
+			// Start sun rising animation after a brief pause
+			setTimeout(() => {
+				document.getElementById("sun").classList.add("rising");
+			}, 50);
+		}, 500);
+	} else {
+		// Instant switch without animation
 		document.getElementById("moon").classList.add("hidden");
 		document.getElementById("sun").classList.remove("hidden");
-
-		if (animate) {
-			document.documentElement.classList.remove("dark");
-			document.getElementById("sun").classList.add("rising");
-		}
-	}, timeout);
+	}
 }
 
 function showNight(animate) {
-	document.getElementById("moon").classList.remove("setting");
-	document.getElementById("sun").classList.remove("rising");
-
-	let timeout = 0;
+	// Clear any existing animations first
+	document.getElementById("moon").classList.remove("setting", "rising");
+	document.getElementById("sun").classList.remove("setting", "rising");
 
 	if (animate) {
-		timeout = 500;
-
+		// Start sun setting animation
 		document.getElementById("sun").classList.add("setting");
-	}
-
-	setTimeout(() => {
-		document.getElementById("nightText").classList.remove("hidden");
-		document.getElementById("dayText").classList.add("hidden");
-
+		
+		// Wait for sun to set before showing moon
+		setTimeout(() => {
+			document.getElementById("sun").classList.add("hidden");
+			document.getElementById("moon").classList.remove("hidden");
+			
+			// Start moon rising animation after a brief pause
+			setTimeout(() => {
+				document.getElementById("moon").classList.add("rising");
+			}, 50);
+		}, 500);
+	} else {
+		// Instant switch without animation
 		document.getElementById("sun").classList.add("hidden");
 		document.getElementById("moon").classList.remove("hidden");
-
-		if (animate) {
-			document.documentElement.classList.add("dark");
-			document.getElementById("moon").classList.add("rising");
-		}
-	}, timeout);
+	}
 }
 
 window.applyMenuItemClasses = () => {
@@ -140,7 +135,6 @@ window.applyMenuItemClasses = () => {
 			menuItems[i].classList.add("text-neutral-900", "dark:text-white");
 		}
 	}
-	//:class="{ 'text-neutral-900 dark:text-white': window.location.pathname == '{menu.url}', 'text-neutral-700 dark:text-neutral-400': window.location.pathname != '{menu.url}' }"
 };
 
 function mobileMenuFunctionality() {

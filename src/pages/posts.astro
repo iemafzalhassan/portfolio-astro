@@ -4,15 +4,15 @@ import PostsLoop from "../components/posts-loop.astro";
 import Layout from "../layouts/main.astro";
 ---
 
-<Layout title="My Writing">
-  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+<Layout title="My Writings">
+  <section class="relative z-20 max-w-4xl mx-auto my-12 px-7 lg:px-8">
     <PageHeading
-      title="My Writing"
+      title="My Writings"
       description="Join me on a journey through DevOps, cloud, and automation. A space where technology meets innovation—expect fresh perspectives, real-world solutions, and expert insights in every post."
     />
 
-    <div class="z-50 flex flex-col items-stretch w-full gap-5 my-8">
-      <PostsLoop count="999999999" />
+    <div class="z-50 w-full my-8">
+      <PostsLoop />
     </div>
   </section>
 </Layout>

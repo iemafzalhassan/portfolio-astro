@@ -6,14 +6,14 @@ import Layout from "../layouts/main.astro";
 ---
 
 <Layout title="My Projects">
-  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+  <section class="relative z-20 max-w-6xl mx-auto my-12 px-7 lg:px-8">
     <PageHeading
       title="My Projects"
-      description="Here’s a glimpse of the exciting projects I’m building right now. Always pushing the boundaries of innovation, I’m constantly working on new ideas—stay tuned for the next big thing! 🚀"
+      description="Here's a glimpse of the exciting projects I'm building right now. Always pushing the boundaries of innovation, I'm constantly working on new ideas—stay tuned for the next big thing! 🚀"
     />
 
     <div
-      class="z-50 grid items-stretch w-full grid-cols-1 my-8 gap-7 sm:gap-5 sm:grid-cols-2"
+      class="z-50 grid items-stretch w-full grid-cols-1 my-8 gap-7 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3"
     >
       {
         projects.map((project) => {

@@ -71,8 +71,10 @@ import Layout from "../layouts/main.astro";
     </div>
   </div>
 
-  <Separator text="Check out my projects" />
+  <Separator text="Check out my projects" link="#projects" />
   <Projects />
-  <Separator text="Some of my writing" />
-  <Writings />
+  <Separator text="Some of my writing" link="#writings" />
+  <div id="writings">
+    <Writings />
+  </div>
 </Layout>
