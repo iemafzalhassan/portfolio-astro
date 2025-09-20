@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/post.astro
 title: "What Is CloudHealth?"
 description: "Cloud Health benifits and use cases."
 date: 2025-01-04
@@ -8,12 +7,7 @@ tags: [Cloud Computing, AWS, Kubernetes, Tutorials, DevOps]
 coverImage: https://images.unsplash.com/photo-1685999260547-e00f9fa132e0?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb
 lastUpdated: 2025-01-04T01:13:00.000Z
 status: Published
----
-
-
-<strong>Author: Md. Afzal Hassan Ehsani</strong>
-
-
+author: iemafzalhassan
 ---
 
 

@@ -1,0 +1,51 @@
+--- 
+--- 
+<div id="cursor-highlighter"></div> 
+
+<style> 
+  #cursor-highlighter { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    background: radial-gradient(circle, rgba(255, 255, 0, 0.2) 0%, rgba(255, 255, 0, 0) 70%); 
+    pointer-events: none; 
+    transform: translate(-50%, -50%); 
+    transition: transform 0.1s ease-out, opacity 0.2s ease-out; 
+    z-index: 9999; 
+    opacity: 0; 
+  } 
+
+  body:hover #cursor-highlighter { 
+    opacity: 1; 
+  } 
+
+  /* Hide on touch devices */
+  @media (pointer: coarse) { 
+    #cursor-highlighter { 
+      display: none; 
+    } 
+  }
+</style> 
+
+<script> 
+  // Only run on non-touch devices
+  if (window.matchMedia('(pointer: fine)').matches) {
+    const highlighter = document.getElementById('cursor-highlighter');
+    if (highlighter) {
+        document.addEventListener('mousemove', (e) => { 
+          highlighter.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`; 
+        }); 
+
+        document.addEventListener('mouseleave', () => { 
+          highlighter.style.opacity = '0'; 
+        }); 
+
+        document.addEventListener('mouseenter', () => { 
+          highlighter.style.opacity = '1'; 
+        });
+    }
+  }
+</script>

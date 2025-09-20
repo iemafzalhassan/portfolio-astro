@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/post.astro
 title: "Exploring Warp Terminal: A Next-Gen Tool for DevOps Engineers"
 description: "Warp terminal is the NewGen terminal for developers."
 date: 2025-01-03
@@ -8,14 +7,8 @@ tags: [DevOps, Cloud Computing, AWS, Kubernetes, Docker, CI/CD, Tutorials]
 coverImage: https://images.unsplash.com/photo-1516031190212-da133013de50?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb
 lastUpdated: 2025-01-04T01:11:00.000Z
 status: Published
+author: iemafzalhassan 
 ---
-
-
-<strong>Author: Md. Afzal Hassan Ehsani</strong>
-
-
----
-
 
 ### What is Warp Terminal?
 

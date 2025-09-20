@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/post.astro
 title: "Linux Operating System: The Foundation of DevOps Engineering"
 description: "The Birth of Linux: A Journey Through Time"
 date: 2025-01-01
@@ -8,6 +7,7 @@ tags: [DevOps, Docker, Tutorials, Kubernetes]
 coverImage: https://prod-files-secure.s3.us-west-2.amazonaws.com/8b557715-1f08-43ae-ac1a-b814d80e7850/bab7a5dc-7e1d-4700-9e49-ffeae10a62c9/linux-pictures-udj1znxick9zk5wz.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45FSPPWI6X%2F20250104%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250104T041356Z&X-Amz-Expires=3600&X-Amz-Signature=7375a87fb900bd56c0a4e0c36d3ed61568be76f1d6baf38dd6ca5764f79e9625&X-Amz-SignedHeaders=host&x-id=GetObject
 lastUpdated: 2025-01-03T22:48:00.000Z
 status: Published
+author: iemafzalhassan 
 ---
 
 

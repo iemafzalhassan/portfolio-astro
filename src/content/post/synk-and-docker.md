@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/post.astro
 title: "Integrating Snyk with Docker"
 description: "everything you need to know about synk."
 date: 2025-01-02
@@ -8,12 +7,7 @@ tags: [DevOps, Cloud Computing, AWS, Docker, CI/CD, Tutorials]
 coverImage: https://images.unsplash.com/photo-1648393847044-0f31992a9ea2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb
 lastUpdated: 2025-01-04T01:10:00.000Z
 status: Published
----
-
-
-<strong>Author: Md. Afzal Hassan Ehsani</strong>
-
-
+author: iemafzalhassan 
 ---
 
 

@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/post.astro
 title: "How to Download and Host OpenWebUI Locally with Llama 3.2 AI on Your Computer Using Docker"
 description: "You can use chatgpt like personal chatgpt in you local environment."
 date: 2024-12-22
@@ -8,9 +7,7 @@ tags: [DevOps, Docker, CI/CD, Tutorials, infrastructure, Cloud Computing, AWS]
 coverImage: https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb
 lastUpdated: 2025-01-04T01:07:00.000Z
 status: Published
----
-
-
+author: iemafzalhassan 
 ---
 
 

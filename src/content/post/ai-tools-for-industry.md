@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/post.astro
 title: "AI tools for DevOps workflows"
 description: "AI industry level tools to study about."
 date: 2024-12-09
@@ -8,11 +7,8 @@ tags: [DevOps, Cloud Computing, AWS, Docker, CI/CD, Tutorials, infrastructure]
 coverImage: https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb
 lastUpdated: 2025-01-04T01:06:00.000Z
 status: Published
+author: iemafzalhassan
 ---
-
-
----
-
 
 ### <strong>Snyk</strong>
 
@@ -470,9 +466,7 @@ To use Ollama locally, you’ll need to install it and run it on your machine. O
 
 To test that everything is set up correctly:
 
-1. Open a sample file, like the <code class="inline-code">continue_tutorial.py</code> file that comes with the Continue extension.
-2. Highlight some code and ask Continue to explain it or even refactor it for you.
-3. You should now see <strong>Mistral</strong> (the LLM) helping you with code suggestions and explanations!
+1. Open a sample. You should now see <strong>Mistral</strong> (the LLM) helping you with code suggestions and explanations!
 
 ---
 

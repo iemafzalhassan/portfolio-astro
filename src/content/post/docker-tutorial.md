@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/post.astro
 title: "Mastering Docker for DevOps: From Zero to Advanced"
 description: "Everything you need to know about docker"
 date: 2025-01-02
@@ -8,9 +7,7 @@ tags: [Docker, DevOps, Tutorials, Kubernetes, Cloud Computing]
 coverImage: https://prod-files-secure.s3.us-west-2.amazonaws.com/8b557715-1f08-43ae-ac1a-b814d80e7850/12726ca8-0ba5-4667-a1a1-5351098ff788/docker-logo-blue.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45FSPPWI6X%2F20250104%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250104T041356Z&X-Amz-Expires=3600&X-Amz-Signature=a40cbe4fa22768fb60f4d4c5e9d3a10d2eceee0754ae9ce5d3f564f010d0387f&X-Amz-SignedHeaders=host&x-id=GetObject
 lastUpdated: 2025-01-03T22:49:00.000Z
 status: Published
----
-
-
+author: iemafzalhassan
 ---
 
 
@@ -657,106 +654,7 @@ While Docker is the most widely adopted container platform, there are alternativ
 ### <strong>14. Complete List of Docker Commands (With Examples and Flags)</strong>
 
 
-Below is a comprehensive list of Docker commands, along with real-world examples and explanations of commonly used flags.
-
-
-### <strong>1.</strong> <strong><code class="inline-code">docker run</code></strong>
-
-
-<strong>Definition</strong>: Creates and starts a new container from an image.
-
-
-<div class="code-block-wrapper">
-  <pre><code class="language-shell">docker run -d -p 80:80 --name myweb nginx</code><button class="copy-button">Copy</button></pre>
-</div>
-
-- <strong>Flags</strong>:
-	- <strong><code class="inline-code">d</code></strong>: Detached mode (run in the background).
-	- <strong><code class="inline-code">p</code></strong>: Publish port 80 of the container to port 80 of the host.
-	- <strong><code class="inline-code">-name</code></strong>: Assigns a name to the container.
-
-### <strong>2.</strong> <strong><code class="inline-code">docker ps</code></strong>
-
-
-<strong>Definition</strong>: Lists running containers.
-
-
-<div class="code-block-wrapper">
-  <pre><code class="language-shell">docker ps -a</code><button class="copy-button">Copy</button></pre>
-</div>
-
-- <strong>Flags</strong>:
-	- <strong><code class="inline-code">a</code></strong>: Shows all containers, including stopped ones.
-
-### <strong>3.</strong> <strong><code class="inline-code">docker pull</code></strong>
-
-
-<strong>Definition</strong>: Downloads an image from a Docker registry.
-
-
-<div class="code-block-wrapper">
-  <pre><code class="language-shell">docker pull ubuntu:latest</code><button class="copy-button">Copy</button></pre>
-</div>
-
-- <strong>Flags</strong>:
-	- <strong><code class="inline-code">-platform</code></strong>: Specifies the platform (e.g., <code class="inline-code">linux/amd64</code>).
-
-### <strong>4.</strong> <strong><code class="inline-code">docker stop</code></strong>
-
-
-<strong>Definition</strong>: Stops a running container.
-
-
-<div class="code-block-wrapper">
-  <pre><code class="language-shell">docker stop myweb</code><button class="copy-button">Copy</button></pre>
-</div>
-
-- <strong>Flags</strong>:
-	- <strong><code class="inline-code">t</code></strong>: Specifies how long to wait before forcibly stopping the container.
-
-### <strong>5.</strong> <strong><code class="inline-code">docker start</code></strong>
-
-
-<strong>Definition</strong>: Starts a stopped container.
-
-
-<div class="code-block-wrapper">
-  <pre><code class="language-shell">docker start myweb</code><button class="copy-button">Copy</button></pre>
-</div>
-
-- <strong>Flags</strong>:
-	- <strong><code class="inline-code">a</code></strong>: Attach the container's stdout/stderr streams.
-
-### <strong>6.</strong> <strong><code class="inline-code">docker rm</code></strong>
-
-
-<strong>Definition</strong>: Removes one or more containers.
-
-
-<div class="code-block-wrapper">
-  <pre><code class="language-shell">docker rm myweb</code><button class="copy-button">Copy</button></pre>
-</div>
-
-- <strong>Flags</strong>:
-	- <strong><code class="inline-code">f</code></strong>: Force remove a running container.
-
-### <strong>7.</strong> <strong><code class="inline-code">docker rmi</code></strong>
-
-
-<strong>Definition</strong>: Removes one or more images.
-
-
-<div class="code-block-wrapper">
-  <pre><code class="language-shell">docker rmi nginx</code><button class="copy-button">Copy</button></pre>
-</div>
-
-- <strong>Flags</strong>:
-	- <strong><code class="inline-code">f</code></strong>: Force remove the image, even if there are containers using it.
-
-### <strong>8.</strong> <strong><code class="inline-code">docker exec</code></strong>
-
-
-<strong>Definition</strong>: Runs a command inside a running container.
+Below is a comprehensive list of Docker commands, along with real-world examples and explanations of a running container.
 
 
 <div class="code-block-wrapper">

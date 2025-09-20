@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/post.astro
 title: "Supercharging DevOps Productivity with Pieces for Developers"
 description: "A brief guide which includes Everything you need to know about pieces."
 date: 2024-10-27
@@ -8,10 +7,8 @@ tags: [DevOps, AWS, Kubernetes, Docker, CI/CD, Tutorials]
 coverImage: https://prod-files-secure.s3.us-west-2.amazonaws.com/8b557715-1f08-43ae-ac1a-b814d80e7850/11c52e70-1f79-475d-abe5-36cdef15ca1b/Screenshot_2024-11-11_at_2.11.23_PM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45FSPPWI6X%2F20250104%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250104T041515Z&X-Amz-Expires=3600&X-Amz-Signature=fc61d848df77412d71c0a19c4cf24e575eaa135a3ccbbdb6691bcf2fed64de55&X-Amz-SignedHeaders=host&x-id=GetObject
 lastUpdated: 2025-01-04T01:12:00.000Z
 status: Published
+author: iemafzalhassan
 ---
-
-
-<strong>Author: Md. Afzal Hassan Ehsani</strong>
 
 
 ### <strong>Introduction</strong>

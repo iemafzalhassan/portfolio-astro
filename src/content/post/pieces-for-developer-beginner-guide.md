@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/post.astro
 title: "A Beginner's Guide to Use Pieces: Your Ultimate Coding Companion"
 description: "A beginner guide for pieces"
 date: 2024-11-26
@@ -8,6 +7,7 @@ tags: [DevOps, Cloud Computing, AWS, Kubernetes, Docker, CI/CD, Tutorials, infra
 coverImage: https://www.notion.so/images/page-cover/woodcuts_3.jpg
 lastUpdated: 2025-01-04T01:09:00.000Z
 status: Published
+author: iemafzalhassan 
 ---
 
 

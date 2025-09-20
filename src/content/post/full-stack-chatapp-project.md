@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/post.astro
 title: "Containerize and Orchestrate: Building a Real-Time(Three-tier) Chat App with Docker and Kubernetes"
 description: "Three tier chatapp project"
 date: 2025-01-01
@@ -8,10 +7,11 @@ tags: [infrastructure, Tutorials, CI/CD, Docker, Kubernetes, AWS, Cloud Computin
 coverImage: https://www.notion.so/images/page-cover/rijksmuseum_avercamp_1620.jpg
 lastUpdated: 2025-01-04T01:08:00.000Z
 status: Published
+author: iemafzalhassan
 ---
 
 
-Hey DevOps Enthusiast! 🚀
+Hey DevOps Enthusiast!
 
 
 Ready to build your own full-stack chat application running in Docker containers and deployed using Kubernetes on your local machine? In this blog, we're going to walk through the process of containerizing a chat app, use Docker for containers, use Docker Compose for managing multiple containers, and finally deploy everything with Kubernetes (Kind) on your local machine.
@@ -567,7 +567,7 @@ When you’re done, you can delete the Kind cluster and clean up the resources:
 ### <strong>Conclusion</strong>
 
 
-By following this guide, you've learned how to set up Three Tier Application, ensuring your app is easy to manage and scale. Whether you’re just starting or already familiar with Docker and Kubernetes, this process gives you the foundation to build more complex applications.
+By following this guide, you've learned how to set up Three Tier Application, ensuring your app is easy to manage and scale. Whether you’re just starting out or already familiar with Docker and Kubernetes, this process gives you the foundation to build more complex applications.
 
 
 Keep experimenting, and don't be afraid to tweak things to suit your needs. The more you practice, the more confident you’ll become with these powerful tools!

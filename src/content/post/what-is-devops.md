@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/post.astro
 title: "What is DevOps? A Beginner's Guide to the World of Modern Software Development"
 description: "A Beginner's Guide to the World of Modern Software Development"
 date: 2024-11-01
@@ -8,6 +7,7 @@ tags: [DevOps, Tutorials, CI/CD, Docker, Kubernetes, AWS, Cloud Computing, infra
 coverImage: https://prod-files-secure.s3.us-west-2.amazonaws.com/8b557715-1f08-43ae-ac1a-b814d80e7850/f86aab2f-38b5-4dd1-8db3-3c45534ba60f/rb_2149379503.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45FSPPWI6X%2F20250104%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250104T041356Z&X-Amz-Expires=3600&X-Amz-Signature=5bd8577c3e8d92f3250c0040bfa0e4bdab0c5d2f978a738de35179c2a0d1bb69&X-Amz-SignedHeaders=host&x-id=GetObject
 lastUpdated: 2025-01-04T01:03:00.000Z
 status: Published
+author: iemafzalhassan 
 ---
 
 

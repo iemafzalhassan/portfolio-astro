@@ -1,5 +1,7 @@
 ---
 import { getCollection } from "astro:content";
+import PostLayout from '../../layouts/post.astro';
+import { calculateReadingTime } from '../../utils/blog';
 
 export async function getStaticPaths() {
 	const postEntries = await getCollection("post");
@@ -11,6 +13,16 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
----
 
-<Content />
+const readingTime = calculateReadingTime(entry.body);
+
+// Create a new frontmatter object to pass to the layout
+const frontmatter = {
+    ...entry.data,
+    readingTime: readingTime,
+    dateFormatted: entry.data.date ? new Date(entry.data.date).toLocaleDateString('en-us', { year: 'numeric', month: 'short', day: 'numeric' }) : '',
+};
+---
+<PostLayout frontmatter={frontmatter}>
+    <Content />
+</PostLayout>

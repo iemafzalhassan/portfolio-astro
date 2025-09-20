@@ -1,9 +1,12 @@
 ---
 import Layout from "./main.astro";
+import CursorHighlighter from "../components/CursorHighlighter.astro";
+import ReadingProgressBar from "../components/ReadingProgressBar.astro";
 const { frontmatter } = Astro.props;
 ---
 
 <Layout>
+  <ReadingProgressBar />
   <div class="min-h-screen">
     <article class="mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
       <header class="pt-16 lg:pt-24">
@@ -11,8 +14,16 @@ const { frontmatter } = Astro.props;
           <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tighter">
             {frontmatter.title}
           </h1>
-          <div class="text-neutral-400">
+          <div class="text-neutral-400 flex items-center justify-center gap-x-2">
             <time datetime={frontmatter.date}>{frontmatter.dateFormatted}</time>
+            <span>&bull;</span>
+            <span>{frontmatter.readingTime} min read</span>
+            {frontmatter.author && (
+              <>
+                <span>&bull;</span>
+                <span>{frontmatter.author}</span>
+              </>
+            )}
           </div>
         </div>
       </header>
@@ -21,6 +32,7 @@ const { frontmatter } = Astro.props;
       </div>
     </article>
   </div>
+  <CursorHighlighter />
 </Layout>
 
 <style>

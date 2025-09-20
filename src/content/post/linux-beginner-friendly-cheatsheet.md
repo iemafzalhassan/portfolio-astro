@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/post.astro
 title: "Essential Linux Commands: A Beginner's Guide"
 description: "Day to day go Linux commands"
 date: 2024-10-22
@@ -8,6 +7,7 @@ tags: [Tutorials, DevOps, Kubernetes, Docker, CI/CD]
 coverImage: 
 lastUpdated: 2025-01-04T01:04:00.000Z
 status: Published
+author: iemafzalhassan
 ---
 
 

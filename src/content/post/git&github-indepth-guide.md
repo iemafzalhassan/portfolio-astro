@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/post.astro
 title: "Mastering Git, GitHub, and GitLab: The Ultimate Beginner's Guide to Version Control"
 description: "Indepth guide to Git and Github"
 date: 2024-12-19
@@ -8,11 +7,8 @@ tags: [DevOps, Cloud Computing, AWS, Kubernetes, Docker, CI/CD, Tutorials, infra
 coverImage: https://images.unsplash.com/photo-1618401479427-c8ef9465fbe1?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb
 lastUpdated: 2025-01-04T01:05:00.000Z
 status: Published
+author: iemafzalhassan
 ---
-
-
----
-
 
 In today’s fast-paced software development landscape, <strong>version control</strong> is essential for collaboration and project management. <strong>Git</strong> is the most widely adopted version control system, and platforms like <strong>GitHub</strong> and <strong>GitLab</strong> amplify its capabilities, making it easier for teams to collaborate effectively. This comprehensive guide will walk you through everything you need to know about Git, including its stages, branching, and real-world applications in both <strong>development</strong> and <strong>DevOps</strong>.
 
